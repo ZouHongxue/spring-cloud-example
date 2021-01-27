@@ -1,0 +1,9 @@
+# will user the remote config as profile the port will be 8761
+spring:
+  cloud:
+    config:
+      label: main
+      profile: live
+      uri: http://localhost:8768/
+  application:
+    name: server

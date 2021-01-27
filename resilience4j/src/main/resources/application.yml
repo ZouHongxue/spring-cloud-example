@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: resilience4j
+
+server:
+  port: 8766
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
