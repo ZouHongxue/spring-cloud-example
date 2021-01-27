@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ZouHongxue/config-repo
+          search-paths: config
+      label: main
+server:
+  port: 8768
