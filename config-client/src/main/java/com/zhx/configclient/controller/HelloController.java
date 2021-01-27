@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-  @Value("${eureka.client.serviceUrl.defaultZone}")
-  private String port;
+  @Value("${spring.application.name}")
+  private String name;
 
   @GetMapping("/hi")
   public String hi() {
-    return "remote host is " + port;
+    return "application name is " + name;
   }
 }

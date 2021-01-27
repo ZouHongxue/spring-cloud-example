@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      label: main
+      uri: http://localhost:8768/
+  application:
+    name: eureka-server-peer2

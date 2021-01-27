@@ -1,4 +1,3 @@
-# In the beginning will show errors like can not find the eureka server, it will fix after you start the server
 spring:
   application:
     name: config-server
@@ -15,4 +14,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://peer1:8750/eureka/, http://peer2:8751/eureka/

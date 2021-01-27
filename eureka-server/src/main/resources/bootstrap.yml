@@ -1,3 +1,4 @@
+# Need to run the config service first, will read the config automatically when you start eureka server
 spring:
   cloud:
     config:

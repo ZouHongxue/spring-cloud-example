@@ -3,7 +3,13 @@ spring:
   cloud:
     config:
       label: main
-      profile: live
-      uri: http://localhost:8768/
+      profile: dev
+#      uri: http://localhost:8768/
+      discovery:
+        enabled: true
+        service-id: config-server
   application:
-    name: server
+    name: config-client
+
+server:
+  port: 8769

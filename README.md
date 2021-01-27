@@ -3,6 +3,7 @@
 >* all the service should include the `config-client` so that can manage the config from one place(git) and read from `config-server`.
 >* every service which want to use RPC need to integrate with `feign`.
 
+> _**Note**_ that the config with peer suffix means `HA(High Available)` solution
 
 **Recommend Steps**
 1. eureka-server
